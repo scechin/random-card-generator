@@ -4,6 +4,7 @@ values = list(range(1,14))
 
 def get_random_card():
     # your code here
-    return "3♤"
+    return random.randint(0, 13)
     
-print(get_random_card())
+    
+print(suites[get_random_card()] + str(values[get_random_card()]))
